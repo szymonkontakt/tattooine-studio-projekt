@@ -270,11 +270,14 @@ footer { padding-bottom: 28px; }
     text-decoration: none;
     }
     .hero {
-    background-image: url('../img/hero-bg.jpg'); /* Podaj ścieżkę jawnie! */
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll !important; /* Wymuś scrollowanie */
-    min-height: 100vh; /* Zamiast height */
+        /* Musi być Gradient + URL */
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('../img/hero-bg.jpg');
+        
+        background-attachment: scroll !important;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
     }
 
 }
+
