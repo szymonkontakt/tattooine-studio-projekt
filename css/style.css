@@ -265,4 +265,16 @@ footer { padding-bottom: 28px; }
     .gallery-item img { filter: grayscale(0%); } /* Na telefonie od razu kolor */
     .style-subtitle {font-size: 0.8rem;}
     .section-title p { font-size: 0.77rem; }
+    a[href^="tel"] {
+    color: inherit; /* Dziedzicz kolor (biały/żółty), a nie niebieski */
+    text-decoration: none;
+    }
+    .hero {
+    background-image: url('../img/hero-bg.jpg'); /* Podaj ścieżkę jawnie! */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll !important; /* Wymuś scrollowanie */
+    min-height: 100vh; /* Zamiast height */
+    }
+
 }
